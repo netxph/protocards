@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    'app/index.html'
+                    'app/{,*/}*.html'
                 ]
             }
         },
