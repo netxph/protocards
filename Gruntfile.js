@@ -7,13 +7,36 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    'app/index.html'
+                ]
+            }
+        },
+        connect: {
             options: {
-                livereload: true
+                port: 9000,
+                hostname: 'localhost',
+                livereload: 35729
+            },
+            livereload: {
+                options: {
+                    open: true,
+                    base: 'app',
+                }
             }
         }
     });
 
-    grunt.registerTask('about', 'About project.', function() {
-        grunt.log.write('Cards - a flexible visual task management');
+    grunt.registerTask('server', 'About project.', function() {
+        grunt.log.write('Launching Cards 2.0.0 Web Application');
+
+        grunt.task.run([
+            'connect:livereload',
+            'watch'
+        ]);
     });
 }
