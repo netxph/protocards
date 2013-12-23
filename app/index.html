@@ -21,72 +21,85 @@
             <nav id="menu" class="navbar navbar-default navbar-fixed-top navbar-inverse">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Cards</a>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Configure</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
                 </div>
-                <form class="navbar-form navbar-right">
+                <form class="navbar-form navbar-left">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-default">Go</button>
                 </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Configure</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Marc Vitalis</a></p>
             </nav>
-            <div id="areas">
-                <div class="area">
-                    <h1>Backlog</h1>
+            <div id="areas" class="row">
+                <div class="area col-md-3">
+                    <h2>Backlog</h2>
                     <div class="cards">
-                        <div class="card">
-                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
-                        <div class="card">
-                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
-                        <div class="card">
-                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
-                        </div>
-                    </div>
-                </div> 
-                <div class="area">
-                    <h1>Todo</h1>
-                    <div class="cards">
-                        <div class="card">
-                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
-                        </div>
-                        <div class="card">
-                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
-                        </div>
-                        <div class="card">
-                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
-                        </div>
-                    </div>
-                </div> 
-                <div class="area">
-                    <h1>Doing</h1>
-                    <div class="cards">
-                        <div class="card">
-                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
-                        </div>
-                        <div class="card">
-                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
-                        </div>
-                        <div class="card">
-                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
                     </div>
                 </div>
-                <div class="area">
-                    <h1>Done</h1>
+                <div class="area col-md-3">
+                    <h2>Todo</h2>
                     <div class="cards">
-                        <div class="card">
-                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
-                        <div class="card">
-                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
-                        <div class="card">
-                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area col-md-3">
+                    <h2>Doing</h2>
+                    <div class="cards">
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area col-md-3">
+                    <h2>Done</h2>
+                    <div class="cards">
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
+                            <div class="panel-footer">Bug</div>
+                        </div>
+                        <div class="card panel panel-default">
+                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
+                            <div class="panel-footer">Bug</div>
                         </div>
                     </div>
                 </div>
