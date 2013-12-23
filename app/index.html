@@ -6,7 +6,7 @@
         <title>Cards - Flexible visual task management [2.0]</title>
 
         <meta name="description" content="" >
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" >
         <link rel="stylesheet" href="styles/main.css" >
@@ -17,16 +17,22 @@
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="pure-g-r">
-            <div id="menu">
-                <div>
-                    <a href="#">Cards</a>
-                    <ul>
-                        <li><a href="#">Manage</a></li>
+        <div>
+            <nav id="menu" class="navbar navbar-default navbar-fixed-top navbar-inverse">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Cards</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Configure</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
-            </div>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Go</button>
+                </form>
+            </nav>
             <div id="areas">
                 <div class="area">
                     <h1>Backlog</h1>
