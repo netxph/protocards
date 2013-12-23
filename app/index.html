@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="vendor/pure/pure.css" >
+        <link rel="stylesheet" href="styles/main.css" >
 
         <script src="vendor/modernizr/modernizr.js"></script>
     </head>
@@ -16,64 +17,75 @@
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <section>
-        <nav class="pure-menu pure-menu-open pure-menu-horizontal">
-            <a href="#" class="pure-menu-heading">Cards</a>
-
-            <ul>
-                <li><a href="#">Manage</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <section id="areas">
-            <article class="area">
-                <header><h1>Backlog</h1></header>
-                <section class="cards">
-                    <article>
-                        <header><span>Create a todo list</span></header>
-                    </article>
-                    <article>
-                        <header><span>Prioritize the list items</span></header>
-                    </article>
-                </section>
-            </article>
-            <article class="area">
-                <header><h1>Todo</h1></header>
-                <section class="cards">
-                    <article>
-                        <header><span>Create a todo list</span></header>
-                    </article>
-                    <article>
-                        <header><span>Prioritize the list items</span></header>
-                    </article>
-                </section>
-            </article>
-            <article class="area">
-                <header><h1>Doing</h1></header>
-                <section class="cards">
-                    <article>
-                        <header><span>Create a todo list</span></header>
-                    </article>
-                    <article>
-                        <header><span>Prioritize the list items</span></header>
-                    </article>
-                </section>
-            </article>
-            <article class="area">
-                <header><h1>Done</h1></header>
-                <section class="cards">
-                    <article>
-                        <header><span>Create a todo list</span></header>
-                    </article>
-                    <article>
-                        <header><span>Prioritize the list items</span></header>
-                    </article>
-                </section>
-            </article>
-        </section>
-        <footer>Cards. Contribute at https://github.com/netxph/cards</footer>
-    </section>
+        <div class="pure-g-r">
+            <div id="menu" class="pure-u">
+                <div class="pure-menu pure-menu-open">
+                    <a class="pure-menu-heading" href="#">Cards</a>
+                    <ul>
+                        <li><a href="#">Manage</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="areas" class="pure-u-1">
+                <div class="area">
+                    <h1>Backlog</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        </div>
+                        <div class="card">
+                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        </div>
+                        <div class="card">
+                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="area">
+                    <h1>Todo</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        </div>
+                        <div class="card">
+                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        </div>
+                        <div class="card">
+                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="area">
+                    <h1>Doing</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        </div>
+                        <div class="card">
+                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        </div>
+                        <div class="card">
+                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <h1>Done</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <span>Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</span>
+                        </div>
+                        <div class="card">
+                            <span>Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</span>
+                        </div>
+                        <div class="card">
+                            <span>Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
