@@ -13,7 +13,8 @@ module.exports = function(grunt) {
                 },
                 files: [
                     'app/{,*/}*.html',
-                    'app/styles/{,*/}*.css'
+                    'app/styles/{,*/}*.css',
+                    'app/scripts/{,*/}*.js'
                 ]
             }
         },

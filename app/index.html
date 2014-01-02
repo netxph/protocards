@@ -13,7 +13,7 @@
 
         <script src="vendor/modernizr/modernizr.js"></script>
     </head>
-    <body>
+    <body ng-app="cardsApp">
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -34,85 +34,16 @@
                 </ul>
                 <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Marc Vitalis</a></p>
             </nav>
-            <div id="areas" class="row">
-                <div class="area col-md-3">
-                    <h2>Backlog</h2>
-                    <div class="cards">
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="area col-md-3">
-                    <h2>Todo</h2>
-                    <div class="cards">
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="area col-md-3">
-                    <h2>Doing</h2>
-                    <div class="cards">
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="area col-md-3">
-                    <h2>Done</h2>
-                    <div class="cards">
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                        <div class="card panel panel-default">
-                            <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                            <div class="panel-footer">Bug</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div ng-view></div>
         </div>
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <!-- library scripts -->
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-route/angular-route.js"></script>
+
+        <!-- application scripts -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/areaList.js"></script>
+
     </body>
 </html>
