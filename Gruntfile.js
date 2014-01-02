@@ -30,7 +30,18 @@ module.exports = function(grunt) {
                     base: 'app',
                 }
             }
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
         }
+    });
+
+    grunt.registerTask('test', 'Start karma test runner', function() {
+        grunt.task.run([
+            'karma'
+        ]);
     });
 
     grunt.registerTask('server', 'About project.', function() {
