@@ -12,6 +12,7 @@ module.exports = function(config) {
             'app/vendor/angular-mocks/angular-mocks.js',
             'app/scripts/*.js',
             'app/scripts/controllers/*.js',
+            'app/scripts/services/*.js',
             'test/spec/controllers/*.js'
         ],
         exclude: [],
