@@ -10,7 +10,7 @@ cardsApp.controller('AreaListCtrl', ['$scope', function($scope) {
         {
             name: "Create a design template for cards",
             description: "description goes here",
-            labels: ["Bug"]
+            labels: ["Issue"]
         }]
     }];
 }]);

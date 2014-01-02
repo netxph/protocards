@@ -1,69 +1,12 @@
 <div id="areas" class="row">
-    <div class="area col-md-3">
-        <h2>Backlog</h2>
-        <div class="cards">
+    <div class="area col-md-3" ng-repeat="area in areas">
+        <h2>{{area.name}}</h2>
+        <div class="cards" ng-repeat="card in area.cards">
             <div class="card panel panel-default">
-                <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-        </div>
-    </div>
-    <div class="area col-md-3">
-        <h2>Todo</h2>
-        <div class="cards">
-            <div class="card panel panel-default">
-                <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-        </div>
-    </div>
-    <div class="area col-md-3">
-        <h2>Doing</h2>
-        <div class="cards">
-            <div class="card panel panel-default">
-                <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-        </div>
-    </div>
-    <div class="area col-md-3">
-        <h2>Done</h2>
-        <div class="cards">
-            <div class="card panel panel-default">
-                <div class="panel-body">Duis quis luctus nulla. Fusce vestibulum tincidunt varius. Sed tincidunt.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Integer ullamcorper, lacus id lobortis sodales, urna elit venenatis magna.</div>
-                <div class="panel-footer">Bug</div>
-            </div>
-            <div class="card panel panel-default">
-                <div class="panel-body">Morbi egestas at nibh nec vehicula. Proin malesuada eros odio.</div>
-                <div class="panel-footer">Bug</div>
+                <div class="panel-body">{{card.name}}</div>
+                <div class="panel-footer" ng-repeat="label in card.labels">
+                    <span>{{label}}</span>
+                </div>
             </div>
         </div>
     </div>
