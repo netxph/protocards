@@ -19,7 +19,7 @@ module.exports = function(config) {
         port: 9001,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         singleRun: false
     });
 }
