@@ -13,7 +13,7 @@
 
         <script src="vendor/modernizr/modernizr.js"></script>
     </head>
-    <body ng-app="cardsApp">
+    <body>
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -42,9 +42,7 @@
         <script src="vendor/angular-route/angular-route.js"></script>
 
         <!-- application scripts -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/areaList.js"></script>
-        <script src="scripts/services/areaService.js"></script>
+        <script src="vendor/requirejs/require.js" data-main="scripts/app.js"></script>
 
     </body>
 </html>

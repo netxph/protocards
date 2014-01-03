@@ -10,6 +10,7 @@ module.exports = function(config) {
             'app/vendor/angular/angular.js',
             'app/vendor/angular-route/angular-route.js',
             'app/vendor/angular-mocks/angular-mocks.js',
+            'app/vendor/requirejs/require.js',
             'app/scripts/*.js',
             'app/scripts/controllers/*.js',
             'app/scripts/services/*.js',
@@ -19,7 +20,7 @@ module.exports = function(config) {
         port: 9001,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
         singleRun: false
     });
 }

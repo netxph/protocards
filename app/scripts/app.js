@@ -18,3 +18,14 @@ cardsApp.config(
             });
     }
 );
+
+require([
+    //controllers
+    'scripts/controllers/areaList.js',
+
+    //services
+    'scripts/services/areaService.js'
+],
+function() {
+    angular.bootstrap(document, ['cardsApp']);
+});
