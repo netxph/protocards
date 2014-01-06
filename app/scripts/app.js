@@ -1,6 +1,5 @@
 'use strict'
 
-var cardsApp = angular.module('cardsApp',['ngRoute']);
 
 cardsApp.config(
     function($routeProvider) {
@@ -27,5 +26,7 @@ require([
     'scripts/services/areaService.js'
 ],
 function() {
+    var cardsApp = angular.module('cardsApp',['ngRoute']);
+
     angular.bootstrap(document, ['cardsApp']);
 });
